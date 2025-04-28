@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main>
+      <section class="section_container">
+        <div class="profile_container">
+          <img id="downloadImage" src="/images/illustration-user-avatar-icon_53876-5907.jpg" alt="Profil image"
+            class="avatar">
+          <label for="imageFile" class="custom-file-upload">
+            Add Photo
+          </label>
+          <input type="file" id="imageFile" accept="image/*" style="display: none;">
+          <p class="profile_name">Sinem Ergün</p>
+        </div>
+        <div class="right_container">
+          <div class="head_title">
+            <h1 class="title">To Do List</h1>
+            <p class="date_title">today's date</p>
+          </div>
+          <hr>
+          <div class="card_container">
+            <div class="list_container">
+              <input type="radio" name="task" class="radio_task" disabled>
+              <input type="text" placeholder="Add a task please!" class="input_task">
+              <button type="button" onclick="addItem()" class="add_item" id="add_item">Add</button>
+            </div>
+            <div id="tasks" class="todo_container"></div> <!-- yeni görevler burada listelenecek -->
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src=" /script.js" async>
+    </script>
+  </body>
+
+</html>
